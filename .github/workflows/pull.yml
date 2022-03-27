@@ -1,0 +1,19 @@
+name: Pull
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    name: Run eslint and jest
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: '17'
+          cache: 'npm'
+      - run: npm install
+      - run: npx eslint .
+      - run: npm run test

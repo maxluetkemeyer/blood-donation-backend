@@ -1,0 +1,23 @@
+{
+  "name": "blood-donation-backend",
+  "version": "0.0.1",
+  "description": "The API for the blood-donation project",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "test": "jest"
+  },
+  "author": "maxluetkemeyer",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.3",
+    "mongodb": "^4.4.1"
+  },
+  "devDependencies": {
+    "eslint": "^8.12.0",
+    "eslint-config-google": "^0.14.0",
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  }
+}
