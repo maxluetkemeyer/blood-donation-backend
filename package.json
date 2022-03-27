@@ -3,9 +3,10 @@
   "version": "0.0.1",
   "description": "The API for the blood-donation project",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js",
-    "dev": "nodemon index.js",
+    "start": "node lib/index.js",
+    "dev": "nodemon lib/index.js",
     "test": "jest"
   },
   "author": "maxluetkemeyer",
